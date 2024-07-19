@@ -1,0 +1,377 @@
+body {
+    font-family: Arial, sans-serif;
+   
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url('../PICTURE/razon1.jpg');
+
+    background-size: cover;
+    
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 150px;
+    box-shadow: 5px 5px 5px 5px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea {
+    resize: vertical;
+}
+button {
+    
+  background-color: rgb(255, 68, 0);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+
+button:hover {
+    background-color: black;
+    background-image: none;
+}
+.navbar {
+    background-color: white ; 
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  }
+  .navbar a {
+    float: right;
+    font-size: 13px;
+    color: black;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+   
+  }
+  .navbar a:hover {
+   color: orangered;
+  }
+  .logo{
+    width: 150px;
+    height: 90px;
+    margin-top: -5px;
+    margin-left: 50px;
+  }
+  .reserve{
+    background-color: rgb(255, 68, 0);
+    padding: 10px 10px 10px 10px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 50px;
+    font-weight: bold;
+
+  }
+  .reserve:hover{
+    background-image: none;
+    background-color: black;
+   
+  }
+  footer {
+    background-color: black;
+    height: 300px;
+    color: white;
+   
+  }
+  .iconse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-left: -1250px; 
+    margin-top: 40px;
+  }
+  .iconse a{
+    text-decoration: none;
+    border-radius: 4px;
+
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    bottom: 50px;
+    margin-right: 20px;
+    margin-top: 40px;
+    position: relative;
+    left: 700px; 
+  }
+  .iconse ion-icon{
+    color:  orangered;
+    font-size: 25px;      
+  }
+  .iconse ion-icon:hover{
+    color: white;
+  }
+  ul li:hover {
+    color:  orangered;
+  }
+  ul .hov{
+    color:  orangered;
+  }
+  .bg{
+    margin-bottom: 80px;
+    width: 110%;
+    padding: 20px 20px 20px 20px;
+    margin-left: -50px;
+    margin-top: -20px;
+    color: white;
+    background-color: rgb(255, 68, 0);
+  }
+  .custom-hr {
+    height: 1px;
+    background-color: rgb(255, 68, 0);
+    width: 130px;
+   
+}
+select#room_type option:hover {
+  background-color: lightblue;
+  color: #fff;
+}
+/* Existing CSS code for body and navbar */
+
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url('../PICTURE/oms.jpg');
+    background-size: cover;
+    background-position: center; /* Center the background image */
+  }
+
+  .navbar {
+    height: auto;
+  }
+
+  .navbar a {
+    float: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .logo {
+    width: 100px;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .reserve {
+    margin: 10px auto;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+/* Existing CSS code for container and form styles */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%; /* Adjust maximum width for smaller screens */
+    margin-top: 50px; /* Reduce top margin for smaller screens */
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"],
+  select,
+  textarea {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  button {
+    margin: 20px auto 0; /* Center the button */
+    display: block;
+  }
+}
+
+/* Existing CSS code for footer and social icons */
+
+@media (max-width: 768px) {
+  footer {
+    height: auto;
+  }
+
+  .iconse {
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 0; /* Adjust margin-left for centering */
+  }
+
+  .iconse a {
+    position: static;
+    margin: 5px;
+  }
+}
+
+/* Existing CSS code for ul and custom-hr */
+
+@media (max-width: 768px) {
+  ul li:hover,
+  ul .hov {
+    color: orangered;
+  }
+
+  .bg {
+    margin-bottom: 20px; /* Reduce margin-bottom for smaller screens */
+  }
+
+  .custom-hr {
+    width: 100%; /* Adjust width for full-width horizontal rule */
+  }
+
+  select#room_type option:hover {
+    background-color: initial;
+    color: initial;
+  }
+}
+.trigger_popup{
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+}
+#success_trigger{
+  
+  width: 2px;
+  position: relative;
+ top: 360px;
+ left: 140px;
+}
+#error_trigger{
+  background: #ff3636;
+  position: fixed;
+  top:20%;
+  left:60%;
+}
+
+#success{
+  display: none;
+  position: fixed;
+  top:20%;
+  left:10%
+}
+#error{
+  display: none;
+  position: fixed;
+  top:20%;
+  left:55%;
+}
+
+.popup-content{
+ /* display: block; */
+  width: 326px;
+  height: 450px;
+  background: white;
+  box-shadow: 4px 4px 70px 10px rgb(0 0 0/11%);
+  border-radius: 25px;
+  margin-left: 450px;
+}
+.imgbox{
+  text-align: center;
+}
+.img{
+  width: 112px;
+  margin-top: 40px;
+}
+.title{
+  font-weight: 500;
+  font-size: 24px;
+ letter-spacing: 0.05em;
+ text-align: center;
+ margin: auto;
+}
+#success .title{
+ color: black;
+}
+#error .title{
+  color: #ff3636;
+}
+.para{
+  font-weight: 500;
+  width: 80%;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin: auto;
+
+
+}
+.button{
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 25px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+#s_button{
+  background:orangered;
+}
+#s_button:hover{
+  background: black;
+  color: white;
+}
+
+#e_button{
+  background: #ff3636;
+}
+

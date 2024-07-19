@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../PICTURE/razon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style1.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <title>Reservation Form</title>
+</head>
+<body>
+    
+
+        <nav class="navbar">
+            <img style="box-shadow: none;" class="logo" src="../PICTURE/razon.png" alt="" srcset="">
+            <a href="form.html"> <span class="reserve">RESERVE</span></a>
+            <a href="reviews.html"> REVIEWS</a>
+            <a href="#contact"> CONTACT US</a>
+            <a href="index.html">GALLERY</a>
+            <a href="index.html">ACCOMODATION</a>
+            <a href="index.html">FACILITIES</a>
+            <a href="index.html">EVENTS</a>
+            <a href="index.html">HOME</a>
+        </nav>
+    
+    <div class="container">
+        <h2 class="bg" style="background-color: orangered; font-style: oblique;" >RAZON FARM RESORT RESERVATION FORM</h2>
+        <form  id="success_trigger" action="../PHP/process_reservation.php" method="POST" onsubmit="submit()">
+            <a href="#" class="trigger_popup" id="success_trigger"></a>
+            <div class="popup" id="success">
+              <div class="popup-content">
+                <div class="imgbox">
+                  <img src="../PICTURE/ch.png" alt="" class="img">
+                </div>
+                <div class="title">
+                  <h3>Success!</h3>
+                </div>
+                <p class="para">Your reservation at Razon Farm Resort has been confirmed successfully. </p>
+                <form action="">
+                  <a href="" class="button" id="s_button">OKAY</a>
+                </form>
+              </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="check_in">Check-in Date:</label>
+                <input  type="date" id="check_in" name="check_in" required>
+            </div>
+            <div class="form-group">
+                <label for="check_out">Check-out Date:</label>
+                <input type="date" id="check_out" name="check_out" required>
+            </div>
+            <div class="form-group">
+                <label for="adults">Number of Adults:</label>
+                <input type="number" id="adults" name="adults" required>
+            </div>
+            <div class="form-group">
+                <label for="children">Number of Children:</label>
+                <input style="width: 99.6%;" type="number" id="children" name="children" required>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="room_type">Room Type:</label>
+                <select style="width: 103%; height: 45px;" id="room_type" name="room_type" required>
+                    <option value="standard">Single Deluxe</option>
+                    <option value="deluxe">Double Deluxe</option>
+                </select>
+            </div>
+          
+            <div class="form-group">
+                <button style="width: 103%; position: relative; right: 250px; "  class="submit" value="submit" onclick="submit()" type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+
+    
+    <footer id="contact" style="margin-top: 80px; width: 1613px; height: 400px; margin-bottom: -50px; margin-left: -100px; font-family: Arial, Helvetica, sans-serif;">
+        <div class="foot">
+           <ul style="margin-left: 200px; list-style: none; font-size: 13px; padding-top: 40px ; ">
+               <h4 style="padding-top: 50px; font-size:15px ;">BE UPDATED</h4>
+               <hr class="custom-hr" style="margin-left: -2px; margin-top: -18px; width: 50px; margin-bottom: 20px;">
+               <li  style="color: gray;" >Razon Farm Resort: A Serene Oasis <br>Of Luxury Amidst Nature's Splendor</li><br>
+               <li style="color: gray;">At Razon Farm Resort, you'll be<br> surrounded by lush, verdant landscapes,<br> with the calming sounds of flowing water<br> and birdsong creating a tranquil ambience.</li>
+           </ul>
+           <div class="foot" style="margin-top: -240px; margin-left: 350px; font-size: 13px;">
+               <ul style="margin-left: 250px; list-style: none; color: gray;">
+                   <h4 style="padding-top: 70px; font-size: 15px; color: white;">DISCOVER RAZON FARM RESORT</h4>
+                   <hr class="custom-hr" style="margin-left: -2px; margin-top: -18px; width: 50px; margin-bottom: 20px;">
+                 <li>EVENTS</li>
+                 <li>FACILITIES</li>
+                 <li>ACCOMODATION</li>
+                 <li>GALLERY</li>
+                 <li>CONTACT US</li>
+               </ul>
+               <div class="foot" style="margin-top: -210px; margin-left: 350px; font-size: 13px;">
+                   <ul style="margin-left: 280px; list-style: none; color: gray;  ">
+                       <h4 style="padding-top: 70px; font-size: 15px; color: white;">SPECIAL OFFERS</h4>
+                       <hr class="custom-hr" style="margin-left: -2px; margin-top: -18px; width: 50px; margin-bottom: 20px;">
+                     <li>EVENTS</li>
+                     <li>FACILITIES</li>
+                     <li>ACCOMODATION</li>
+                   </ul>
+               <div class="foot" style="margin-top: -174px; margin-left: 270px; font-size: 13px;">
+                   <ul style="margin-left: 250px; list-style: none; color: gray;">
+                       <h4 style="padding-top: 65px; font-size:15px ; color: white;">GET IN  TOUCH</h4>
+                       <hr class="custom-hr" style="margin-left: -2px; margin-top: -18px; width: 50px; margin-bottom: 20px;">
+                       <li>Laspinas, Penaranda, Nueva Ecija,
+                           Philippines<br> 1966
+                           Reservations / Resort Mobile No.:<br> 
+                           +63917.706.9136 (Monday-Sunday,<br>  8:00am-6:00pm)
+                           +63968.871.4516<br>  (Monday-Sunday, 8:00am-10:00pm)
+                           <br> Email: crystal@acuaticoresort.com</li>
+                   </ul>
+                   <div class="iconse">
+                       <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+                       <a href="https://www.google.com.ph/?gws_rd=ssl"><ion-icon name="logo-google"></ion-icon></a>
+                       <a href="https://www.instagram.com/?hl=en"><ion-icon name="logo-instagram"></ion-icon></a>
+                       <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+                 
+               </div>
+               <h4  style="margin-left: -300px; color: gray; font-size: 12px; margin-top: 5px; " >&copy; 2023 RAZON FARM RESORT - ALL RIGHTS RESERVED.</h4>
+            </div>
+        </footer>
+       </div>
+      <a href="#"> <i style='font-size:25px; color: white; background-color: rgb(31, 27, 27); padding: 5px 5px 5px 5px; margin-left: -300px; margin-top: 1830px;' class='fas'>&#xf106;</i></a> 
+   
+      <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "651fcce96201910006006be4";
+        (function() {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+    </script>
+    
+
+
+      <script>
+        function submit(){
+            alert ("SubMitted successfully! ")
+        }
+    </script>
+    
+       <script src="../JS/main.js"></script>
+       
+</body>
+</html>
